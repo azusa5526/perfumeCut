@@ -64,14 +64,16 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #916000;  //$blue !default;
+$secondary:     #AC8A46;  //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         #E0E0E0;  //$gray-100 !default;
+$dark:          #8D8D8D;  //$gray-800 !default;
+$white:         #fff;
+$black:         #000;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -83,7 +85,9 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "white":      $white,
+    "black":      $black,
   ),
   $theme-colors
 );
@@ -138,11 +142,19 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25),    // 4px
+    2: ($spacer * .5),     // 8px
+    3: ($spacer * .75),    // 12px
+    4: $spacer,            // 16px
+    5: ($spacer * 1.25),   // 20px
+	  6: ($spacer * 1.5),    // 24px
+	  7: ($spacer * 1.75),   // 28px
+    8: ($spacer * 2),      // 32px
+    9: ($spacer * 2.25),   // 36px
+    10: ($spacer * 2.5),   // 40px
+    11: ($spacer * 3),     // 48px
+    12: ($spacer * 3.25),  // 52px
+    13: ($spacer * 3.75),  // 60px
   ),
   $spacers
 );
@@ -292,11 +304,11 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base !default;
+$h2-font-size:                $font-size-base * 2.5 !default;   //40px
+$h3-font-size:                $font-size-base * 2 !default;     //32px
+$h4-font-size:                $font-size-base * 1.5 !default;   //24px
+$h5-font-size:                $font-size-base * 1.25 !default;  //20px
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;

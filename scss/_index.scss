@@ -1,3 +1,112 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
-  color: aquamarine;
+  height: 38px;
+  line-height: 16px;
+  a {
+    @include hideText("../img/d’Perfume@2x.png", 128px, 38px);
+  }
+}
+
+.footerInfo a {
+  @include hideText("../img/d’Perfumew@2x.png", 128px, 38px);
+}
+
+.footerLink a {
+  color: $white;
+  font-size: 20px;
+}
+
+.subscribe {
+  background-image: url(../img/photo-1532413992378-f169ac26fff0@2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+
+  .container {
+    margin-bottom: 112px;
+  }
+}
+
+.banner {
+  background-image: url(../img/photo-1588159343745-445ae0b16383@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 870px;
+
+  .bannerContent {
+    font-size: 24px;
+  }
+  //button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
+  //button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+  .btn-white-custom {
+    @include button-variant(transparent, #fff, rgba(#ffffff, 0.4), #fff);
+    @include button-outline-variant(#fff, #fff, rgba(#ffffff, 0.2));
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 2rem;
+  }
+}
+
+.introduce {
+  p {
+    font-size: 20px;
+  }
+
+  .btn-black-custom {
+    @include button-variant(transparent, #000, rgba(#fff, 0.2), #000);
+    @include button-outline-variant(#000, #000, rgba(#000, 0.1));
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 2rem;
+  }
+}
+
+//card reset
+.card {
+  background-color: transparent;
+  border: 0;
+
+  &-body {
+    padding: 0;
+  }
+
+  &-title {
+    margin: 0;
+  }
+}
+
+.promote .card {
+  &-title {
+    line-height: 36px;
+    margin-top: 8px;
+  }
+
+  &-body > :last-child {
+    margin: 0;
+  }
+}
+
+.recycle {
+  .title {
+    line-height: 48px;
+  }
+
+  .subtitle {
+    line-height: 30px;
+  }
+}
+
+.subscribe {
+  input {
+    height: 60px;
+    border: #916000 2px solid;
+  }
 }
