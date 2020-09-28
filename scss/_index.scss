@@ -5,7 +5,7 @@ img {
 }
 
 h1 {
-  height: 38px;
+  height: 40px;
   line-height: 16px;
   a {
     @include hideText("../img/d’Perfume@2x.png", 128px, 38px);
@@ -32,6 +32,12 @@ h1 {
   .container {
     margin-bottom: 112px;
   }
+
+  @include media-breakpoint-only(xs) {
+    .container {
+      padding: 0;
+    }
+  }
 }
 
 .banner {
@@ -39,11 +45,32 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 870px;
+  height: 480px;
 
   .bannerContent {
     font-size: 24px;
   }
+
+  @include media-breakpoint-up(md) {
+    height: 870px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    .container {
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .bannerContent {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
   //button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
   //button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
   .btn-white-custom {
@@ -58,6 +85,16 @@ h1 {
 .introduce {
   p {
     font-size: 20px;
+  }
+
+  @include media-breakpoint-only(md) {
+    br {
+      display: none;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 
   .btn-black-custom {
@@ -83,14 +120,22 @@ h1 {
   }
 }
 
-.promote .card {
-  &-title {
-    line-height: 36px;
-    margin-top: 8px;
+.promote {
+  .card {
+    &-title {
+      line-height: 36px;
+      margin-top: 8px;
+    }
+
+    &-body > :last-child {
+      margin: 0;
+    }
   }
 
-  &-body > :last-child {
-    margin: 0;
+  @include media-breakpoint-only(xs) {
+    .container {
+      padding: 0;
+    }
   }
 }
 
@@ -102,11 +147,23 @@ h1 {
   .subtitle {
     line-height: 30px;
   }
+
+  .recycleImg {
+    background-image: url("../img/photo-1594913615593-e4b8c44625be@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 520px;
+  }
 }
 
 .subscribe {
   input {
     height: 60px;
     border: #916000 2px solid;
+  }
+
+  button {
+    font-size: 16px;
   }
 }
