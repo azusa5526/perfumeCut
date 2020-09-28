@@ -156,6 +156,8 @@ $spacers: map-merge(
     12: ($spacer * 3.25),  // 52px
     13: ($spacer * 3.5),   // 56px
     14: ($spacer * 3.75),  // 60px
+    15: ($spacer * 5),     // 80px
+    30: ($spacer * 1.875), // 30px
   ),
   $spacers
 );
