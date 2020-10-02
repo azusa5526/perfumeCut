@@ -1,0 +1,19 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//card reset
+.card {
+  background-color: transparent;
+  border: 0;
+
+  &-body {
+    padding: 0;
+  }
+
+  &-title {
+    margin: 0;
+  }
+}

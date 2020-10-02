@@ -14435,6 +14435,19 @@ img {
   height: auto;
 }
 
+.card {
+  background-color: transparent;
+  border: 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  margin: 0;
+}
+
 h1 {
   height: 40px;
   line-height: 16px;
@@ -14456,6 +14469,9 @@ h1 a {
     border-bottom: 1px solid #fff;
     text-align: center;
   }
+  .nav li:last-child {
+    border: 0;
+  }
   .nav a {
     color: #fff !important;
   }
@@ -14472,27 +14488,7 @@ h1 a {
 }
 
 .footerLink a {
-  color: #fff;
   font-size: 20px;
-}
-
-.subscribe {
-  background-image: url(../img/photo-1532413992378-f169ac26fff0@2x.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-}
-
-.subscribe .container {
-  margin-bottom: 112px;
-}
-
-@media (max-width: 575.98px) {
-  .subscribe .container {
-    padding: 0;
-  }
 }
 
 .banner {
@@ -14686,19 +14682,6 @@ h1 a {
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-.card {
-  background-color: transparent;
-  border: 0;
-}
-
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  margin: 0;
-}
-
 .promote .card-title {
   line-height: 36px;
   margin-top: 8px;
@@ -14730,6 +14713,19 @@ h1 a {
   height: 520px;
 }
 
+.subscribe {
+  background-image: url(../img/photo-1532413992378-f169ac26fff0@2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.subscribe .container {
+  margin-bottom: 112px;
+}
+
 .subscribe input {
   height: 60px;
   border: #916000 2px solid;
@@ -14737,6 +14733,12 @@ h1 a {
 
 .subscribe button {
   font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .subscribe .container {
+    padding: 0;
+  }
 }
 
 .brandFilter .nav-link {

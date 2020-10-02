@@ -1,59 +1,3 @@
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1 {
-  height: 40px;
-  line-height: 16px;
-  a {
-    @include hideText("../img/d’Perfume@2x.png", 128px, 38px);
-  }
-}
-
-.nav {
-  @include media-breakpoint-only(xs) {
-    li {
-      background-color: #707070;
-      border-bottom: 1px solid $white;
-      text-align: center;
-    }
-
-    a {
-      color: $white !important;
-    }
-  }
-}
-
-.footerInfo a {
-  @include hideText("../img/d’Perfumew@2x.png", 128px, 38px);
-}
-
-.footerLink a {
-  color: $white;
-  font-size: 20px;
-}
-
-.subscribe {
-  background-image: url(../img/photo-1532413992378-f169ac26fff0@2x.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-
-  .container {
-    margin-bottom: 112px;
-  }
-
-  @include media-breakpoint-only(xs) {
-    .container {
-      padding: 0;
-    }
-  }
-}
-
 .banner {
   background-image: url(../img/photo-1588159343745-445ae0b16383@2x.png);
   background-size: cover;
@@ -85,9 +29,7 @@ h1 {
     }
   }
 
-  //button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
-  //button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
-  .btn-white-custom {
+ .btn-white-custom {
     @include button-variant(transparent, #fff, rgba(#ffffff, 0.4), #fff);
     @include button-outline-variant(#fff, #fff, rgba(#ffffff, 0.2));
     font-weight: bold;
@@ -117,20 +59,6 @@ h1 {
     font-weight: bold;
     border: 2px solid;
     border-radius: 2rem;
-  }
-}
-
-//card reset
-.card {
-  background-color: transparent;
-  border: 0;
-
-  &-body {
-    padding: 0;
-  }
-
-  &-title {
-    margin: 0;
   }
 }
 
@@ -172,6 +100,17 @@ h1 {
 }
 
 .subscribe {
+  background-image: url(../img/photo-1532413992378-f169ac26fff0@2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+
+  .container {
+    margin-bottom: 112px;
+  }
+
   input {
     height: 60px;
     border: #916000 2px solid;
@@ -179,5 +118,11 @@ h1 {
 
   button {
     font-size: 16px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    .container {
+      padding: 0;
+    }
   }
 }

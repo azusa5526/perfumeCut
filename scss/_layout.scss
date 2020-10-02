@@ -1,0 +1,35 @@
+// header
+h1 {
+  height: 40px;
+  line-height: 16px;
+  a {
+    @include hideText("../img/d’Perfume@2x.png", 128px, 38px);
+  }
+}
+
+.nav {
+  @include media-breakpoint-only(xs) {
+    li {
+      background-color: #707070;
+      border-bottom: 1px solid $white;
+      text-align: center;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    a {
+      color: $white !important;
+    }
+  }
+}
+
+//footer
+.footerInfo a {
+  @include hideText("../img/d’Perfumew@2x.png", 128px, 38px);
+}
+
+.footerLink a {
+  font-size: 20px;
+}
