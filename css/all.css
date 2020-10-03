@@ -14448,6 +14448,26 @@ img {
   margin: 0;
 }
 
+.header button:focus {
+  outline: 0;
+}
+
+.header button .fa-bars {
+  font-size: 2rem;
+}
+
+.header .navCart {
+  position: relative;
+}
+
+.header .navCart span {
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  padding: 0 6px;
+}
+
 h1 {
   height: 40px;
   line-height: 16px;
