@@ -32,9 +32,13 @@
  .btn-white-custom {
     @include button-variant(transparent, #fff, rgba(#ffffff, 0.4), #fff);
     @include button-outline-variant(#fff, #fff, rgba(#ffffff, 0.2));
-    font-weight: bold;
+    @include button-size(1rem, 0, 1.5rem, 1.5rem, 2rem);
+    width: 100%;
     border: 2px solid;
-    border-radius: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      width: 78.6517%;
+    }
   }
 }
 
@@ -56,9 +60,9 @@
   .btn-black-custom {
     @include button-variant(transparent, #000, rgba(#fff, 0.2), #000);
     @include button-outline-variant(#000, #000, rgba(#000, 0.1));
-    font-weight: bold;
+    @include button-size(1rem, 0, 1.25rem, 1.25rem, 2rem);
+    width: 100%;
     border: 2px solid;
-    border-radius: 2rem;
   }
 }
 
