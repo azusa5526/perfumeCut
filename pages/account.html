@@ -72,8 +72,8 @@
       </div>
 
       <div class="col-lg-7 order-3 order-lg-2">
-        <form class="mb-11">
-          <h6 class="border-bottom border-dark font-weight-bold pb-2 mb-4">個人資料修改</h6>
+        <form class="mb-11 text-dark">
+          <h6 class="border-bottom border-dark text-black font-weight-bold pb-2 mb-4">個人資料修改</h6>
           <div class="form-group row mb-5">
             <label class="col-3 col-lg-2 text-gray-light pr-0">會員帳號</label>
             <div class="col-9 col-lg-7 text-gray-light">
@@ -117,7 +117,7 @@
             <label class="col-3 col-lg-2 text-gray-light pr-0" for="nation">聯絡地址</label>
             <div class="col-9 col-lg-7 text-gray-light">
 
-              <div class="form-row mb-5">
+              <div class="form-row mb-2">
                 <div class="col-10 col-lg-6">
                   <select class="form-control text-gray-light" id="nation">
                     <option>台灣及離島</option>
@@ -128,7 +128,7 @@
                 </div>
               </div>
 
-              <div class="form-row mb-5">
+              <div class="form-row mb-2">
                 <div class="col-5 col-lg-6">
                   <select class="form-control text-gray-light" id="county">
                     <option>高雄市</option>
@@ -163,7 +163,7 @@
             <label class="col-3 col-lg-2 text-gray-light pr-0" for="nation">配送地址</label>
             <div class="col-9 col-lg-7 text-gray-light">
 
-              <div class="form-row mb-5">
+              <div class="form-row mb-2">
                 <div class="col-10 col-lg-6">
                   <select class="form-control text-gray-light" id="nation">
                     <option>台灣及離島</option>
@@ -174,7 +174,7 @@
                 </div>
               </div>
 
-              <div class="form-row mb-5">
+              <div class="form-row mb-2">
                 <div class="col-5 col-lg-6">
                   <select class="form-control text-gray-light" id="county">
                     <option>高雄市</option>
@@ -202,13 +202,17 @@
 
           <div class="form-group row mb-5">
             <div class="col-9 col-lg-7 offset-3 offset-lg-2">
-              <button class="btn btn-primary">確認修改</button>
+              <div class="form-row">
+                <div class="col-10 col-lg-6">
+                  <button class="btn btn-primary w-100">確認修改</button>
+                </div>
+              </div>
             </div>
           </div>
         </form>
 
-        <form class="mb-14">
-          <h6 class="border-bottom border-dark pb-2 mb-5">修改密碼</h6>
+        <form class="mb-14 text-dark">
+          <h6 class="border-bottom border-dark text-black pb-2 mb-5">修改密碼</h6>
           <div class="form-group row mb-5">
             <label class="col-3 col-lg-2 text-gray-light" for="oldPasswd">舊密碼</label>
             <div class="col-9 col-lg-7">
@@ -230,15 +234,19 @@
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row mb-5">
             <div class="col-9 col-lg-7 offset-3 offset-lg-2">
-              <button class="btn btn-primary">變更密碼</button>
+              <div class="form-row">
+                <div class="col-10 col-lg-6">
+                  <button class="btn btn-primary w-100">變更密碼</button>
+                </div>
+              </div>
             </div>
           </div>
         </form>
       </div>
 
-      <div class="col-lg-3 text-gray-light order-2 order-lg-3">
+      <div class="col-lg-3 order-2 order-lg-3 text-dark">
         <div class="d-flex align-items-center mb-6">
           <i class="fas fa-user-alt pr-1 mr-1"></i>
           <span class="mr-1">會員編碼</span>
@@ -274,24 +282,29 @@
 
   <!-- content end -->
 
-  <div class="footer container-fluid bg-primary">
-    <div class="container d-flex justify-content-between">
-      <div class="footerInfo d-flex align-items-center py-5">
-        <a class="navbar-brand p-0 mr-5" href="#">d'Perfume</a>
-        <small class="text-white m-0">© 2020. All Rights Reserved.</small>
+  <div class="footer container-fluid bg-primary p-0">
+    <div class="container">
+      <div class="row justify-content-between align-items-center no-gutters py-4">
+        <div class="col-auto footerIcon">
+          <a class="navbar-brand p-0 mr-5" href="#">d'Perfume</a>
+        </div>
+        <div class="col-auto m-0 mr-md-auto">
+          <small class="text-white m-0">© 2020. All Rights Reserved.</small>
+        </div>
+        <div class="col-auto d-none d-md-flex">
+          <ul class="footerLink navbar-nav flex-row">
+            <li class="nav-item pr-9">
+              <a class="nav-link text-white" href="#">Product</a>
+            </li>
+            <li class="nav-item pr-9">
+              <a class="nav-link text-white" href="#"></i>Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <ul class="footerLink navbar-nav flex-row align-items-center d-none d-md-flex">
-        <li class="nav-item pr-9">
-          <a class="nav-link text-white" href="#">Product</a>
-        </li>
-        <li class="nav-item pr-9">
-          <a class="nav-link text-white" href="#"></i>Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#"></i>Contact</a>
-        </li>
-      </ul>
     </div>
   </div>
 

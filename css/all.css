@@ -17,9 +17,8 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray-dark: #707070;
   --gray: #848484;
-  --gray-light: #818A91;
+  --gray-dark: #707070;
   --primary: #916000;
   --secondary: #AC8A46;
   --success: #28a745;
@@ -14479,6 +14478,8 @@ h1 a {
   white-space: nowrap;
   overflow: hidden;
   background-image: url("../img/d’Perfume@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 128px;
   height: 38px;
 }
@@ -14497,14 +14498,16 @@ h1 a {
   }
 }
 
-.footerInfo a {
+.footerIcon a {
   background-size: contain;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
   background-image: url("../img/d’Perfumew@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 128px;
-  height: 38px;
+  height: 42px;
 }
 
 .footerLink a {
@@ -14737,11 +14740,11 @@ h1 a {
   line-height: 30px;
 }
 
-.recycle .recycleImg {
-  background-image: url("../img/photo-1594913615593-e4b8c44625be@2x.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.recycle img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   height: 520px;
 }
 
@@ -14776,6 +14779,20 @@ h1 a {
 .brandFilter .nav-link {
   font-size: 20px;
   line-height: 30px;
+}
+
+.productList .cardImg {
+  overflow: hidden;
+}
+
+.productList .cardImg img, .productList .cardImg img:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.productList .cardImg img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productList .card-title {

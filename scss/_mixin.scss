@@ -4,6 +4,8 @@
   white-space: nowrap;
   overflow: hidden;
   background-image: url($imgUrl);
+  background-repeat: no-repeat;
+  background-position: center;
   width: $width;
   height: $height;
 }

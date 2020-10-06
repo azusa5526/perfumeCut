@@ -6,6 +6,18 @@
 }
 
 .productList {
+  .cardImg {
+    overflow: hidden;
+
+    img, img:hover {
+      transition: .3s;
+    }
+    
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
   .card-title {
     line-height: 36px;
   }

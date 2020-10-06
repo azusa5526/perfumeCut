@@ -50,8 +50,8 @@ h1 {
 }
 
 //footer
-.footerInfo a {
-  @include hideText("../img/d’Perfumew@2x.png", 128px, 38px);
+.footerIcon a {
+  @include hideText("../img/d’Perfumew@2x.png", 128px, 42px);
 }
 
 .footerLink a {

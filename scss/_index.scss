@@ -94,11 +94,17 @@
     line-height: 30px;
   }
 
-  .recycleImg {
-    background-image: url("../img/photo-1594913615593-e4b8c44625be@2x.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  // .recycleImg {
+  //   background-image: url("../img/photo-1594913615593-e4b8c44625be@2x.png");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   height: 520px;
+  // }
+
+  img {
+    object-fit: cover;
+    object-position: center;
     height: 520px;
   }
 }
@@ -117,7 +123,7 @@
 
   input {
     height: 60px;
-    border: #916000 2px solid;
+    border: $primary 2px solid;
   }
 
   button {
